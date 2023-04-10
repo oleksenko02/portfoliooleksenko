@@ -1,0 +1,115 @@
+.resume
+    padding-top: 120px
+    &__title
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 900
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+        text-align: center
+        position: relative
+        @include circle
+        &::before
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%) translateY(-4px)
+    &__subtitle
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 900
+        font-size: 36px
+        line-height: 60px
+        color: #000000
+        text-align: center
+    &__divider
+        margin: 0 auto
+        margin-top: 25px
+        width: 60px
+        height: 3px
+        background-color: $main-color
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        padding:60px 65px 0 65px
+        column-gap: 135px
+    
+    &__label
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        line-height: 30px
+        color: #000000
+        position: relative
+        padding-left: 35px
+        &:before
+            content: ''
+            position: absolute
+            width: 15px
+            height: 15px
+            border-radius: 100%
+            left: -7px
+            top: 50%
+            transform: translateY(-50%)
+            background-color: $main-color
+            z-index: 5
+    ul
+        list-style: none
+    li
+        position: relative
+        &::after
+            content: ''
+            width: 1px
+            height: 100%
+            position: absolute
+            top: -16px
+            left: 0
+            background-color: #000
+    &__item
+        position: relative
+        &::before
+            content: ''
+            height: 1px
+            width: 43px
+            position: absolute
+            background-color: #000
+            top: 59px
+            z-index: -1  
+
+        &-head
+            position: relative
+            padding: 45px 0 0 99px
+        &-body
+            padding: 12px 0 0 43px
+        &-icon
+            position: absolute
+            @include circle
+            left: 45px 
+            top: 50%    
+            img
+                position: absolute
+                top: 14px
+                left: 14px
+        &-name
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 700
+            font-size: 14px
+            line-height: 21px
+            color: #000000
+        &-location
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
+        &-body
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000

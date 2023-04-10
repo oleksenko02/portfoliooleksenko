@@ -1,0 +1,219 @@
+@media( max-width: 1439px)
+    .sidepanel
+        display: none
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+        
+    .about
+        &__block
+            grid-template-columns: 400px 520px
+            column-gap: 40px
+        &__skill
+            column-gap: 20px
+            grid-template-columns: repeat(2, 250px)
+    .resume
+        &__wrapper
+            grid-template-columns: repeat(2, 450px)
+            column-gap: 40px 
+    .skill
+        &__wrapper
+            grid-template-columns: repeat(3, 250px)
+            grid-template-rows: repeat(3, 250px)
+            grid-auto-columns: 270px
+            gap: 13px   
+            justify-content: center
+        &__block
+            margin-top: 40px
+    .price
+        &__wrapper
+            grid-template-columns: repeat(2, 300px)
+            grid-template-rows: repeat(3, auto)
+            column-gap: 65px
+            justify-content: center
+    .contact
+        &__wrapper
+            padding: 0
+            grid-template-columns: 400px 485px 
+            
+        &__form
+            grid-template: 45px 190px 45px / repeat(2, 250px)     
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+        
+    .about
+        &__block
+            grid-template-columns: 300px 380px
+            column-gap: 40px
+        &__skill
+            column-gap: 20px
+            grid-template-columns: 350px
+            justify-content: center
+        &__wrapper
+            grid-template-columns: 40px 320px
+            column-gap: 20px
+        &__subtitle
+            font-size: 28px
+    .resume
+        &__wrapper
+            grid-template-columns: repeat(2, 310px)
+            column-gap: 35px    
+    .skill
+        &__block
+            margin-top: 40px
+            grid-template-columns: repeat(2, 350px)
+            grid-template-rows: repeat(6, 62px)
+            gap: 30px        
+    .price
+        &__wrapper
+            grid-template-columns: 400px 400px 
+            column-gap: 25px
+            justify-content: center 
+    .contact
+        &__wrapper
+            grid-template-columns: 300px 400px
+        &__form
+            grid-template: 45px 190px 45px / repeat(2, 195px)  
+            
+        &_btn
+            padding: 8px 25px
+            line-height: 16px
+            
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+        
+    .promo
+        .title
+            width: 300px
+        .title_fz48
+            margin-top: 10px
+            font-size: 29px
+            line-height: 39px
+    .about
+        padding-top: 40px
+        &__block
+            grid-template: 340px auto auto / 1fr
+            column-gap: 40px
+        
+        &__skill
+            grid-template-columns: repeat(2, 260px) 
+        &__wrapper
+            grid-template-columns: 40px 200px
+            column-gap: 20px
+    .resume
+        &__wrapper
+            grid-template-columns: repeat(2, 240px)
+            column-gap: 40px  
+    .skill
+        &__block
+            padding-top: 40px
+            grid-template-columns: repeat(2, 250px)
+            grid-template-rows: repeat(6, 62px)
+            gap: 30px 
+            justify-content: center
+            
+        &__wrapper
+            grid-template-columns: repeat(2, 250px)
+            grid-template-rows: repeat(4, 250px)
+            grid-auto-columns: 270px
+            gap: 13px   
+            justify-content: center
+    .work
+        padding-top: 20px
+        &__wrapper
+            grid-template-columns: repeat(2, 200px)
+            grid-template-rows: repeat(2, 200px)
+            justify-content: center
+            gap: 15px        
+        img
+            display: block
+            width: 200px
+            height: 200px
+    .contact
+        &__img
+            display: none
+        &__wrapper
+            grid-template-columns: 1fr
+        &__form
+            grid-template: 45px 190px 45px / repeat(2, 250px)
+
+@media (max-width: 576px)
+    .container
+        max-width: 100% 
+        
+    .promo
+        
+        .title
+            width: 300px
+        .title_fz48
+            margin-top: 10px
+            font-size: 26px
+            line-height: 39px
+        .hamburger
+            right: 20px
+    .menu__block
+        width: 250px
+        height: 100% 
+    .about
+        padding-top: 40px
+        &__block
+            grid-template: 340px auto auto / 1fr
+            column-gap: 40px
+        
+        &__skill
+            grid-template-columns: 1fr 
+        &__wrapper
+            grid-template-columns: 40px 200px
+            column-gap: 20px 
+        &__subtitle
+            font-size: 23px
+    .resume
+        &__wrapper
+            grid-template-columns: 250px
+        &__subtitle
+            font-size: 28px
+    .skill
+        &__block
+            padding-top: 40px
+            grid-template-columns: 1fr 
+            gap: 30px  
+        &__wrapper
+            grid-template-columns: 1fr 
+            gap: 13px   
+        &__subtitle
+            font-size: 22px
+    .work
+        padding-top: 20px
+        &__wrapper
+            grid-template-columns: 200px
+            gap: 15px        
+        img
+            display: block
+            width: 200px
+            height: 200px
+    .price
+        &__wrapper
+            grid-template-columns: 260px 
+            column-gap: 25px
+            justify-content: center 
+    .contact
+        &__form
+            grid-template: 45px 45px 90px minmax(45px, auto) / 1fr 1fr
+
+        &__textarea
+            grid-column: unset
+            width: 100%
+        &__btn
+            order: 2
+            max-width: 220px
+            margin: 0 auto
+            margin-top: 20px
+        &__privacy
+            width: 180px
+            margin: 0 auto
+            line-height: 18px
+            margin-top: 20px

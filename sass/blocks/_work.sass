@@ -1,0 +1,61 @@
+.work
+    
+    padding-top: 120px
+    &__title
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+        @include circle
+        position: relative
+        text-align: center
+        &:before
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%) translateY(-4px)
+    &__subtitle
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 700
+            font-size: 36px
+            line-height: 60px
+            color: #000000 
+            text-align: center
+    &__divider
+        width: 60px
+        height: 3px
+        background-color: $main-color
+        margin: 0 auto 
+        margin-top: 25px
+    img
+        display: block
+        width: 280px
+        height: 280px
+        border: 2px solid #000
+        &:hover
+            opacity: 0.8
+            border: 2px solid $main-color
+            transition: 0.5s all
+            transform: scale(1.05)
+            
+    &__wrapper
+        display: grid
+        margin-top: 60px
+        grid-template-columns: repeat(2, 280px) 
+        grid-template-rows: repeat(1, 280px) 
+        justify-content: center
+        gap: 15px
+        padding-bottom: 120px
+        .vertical
+            grid-row: 1 / 4
+            grid-column: 4 / 5
+            height: 575px
+
+            img
+                object-fit: cover
+                height: 100%
+            
+        

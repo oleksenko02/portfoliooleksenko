@@ -1,0 +1,55 @@
+.promo
+    min-height: 100vh
+    position: relative
+    background: radial-gradient(circle, rgba(238,174,202,1) 10%, rgba(175,169,214,1) 33%, rgba(200,202,230,1) 89%, rgba(109,163,226,1) 92%)
+    padding-top: 205px
+        
+    &__title
+        width: 535px
+        margin-top: 10px
+      
+    &__subtitle 
+        position: relative
+        padding-left: 10px
+        z-index: 2
+        @include circle
+    
+    &__btns
+        margin-top: 25px
+        width: 250px
+        display: flex
+        align-items: center
+        justify-content: space-between    
+    &__link
+        color: #000 
+        font-weight: bold
+        text-decoration: none
+        &:hover
+            color: #000
+    &__item
+        position: absolute
+        right: 250px
+        top: -220px
+        img
+            height: 1144px
+            width: 866px
+            
+            
+            
+    .hamburger
+        position: absolute
+        right: 30px
+        top: 20px
+        transform: rotate(180deg)
+        cursor: pointer
+        span
+            display: block
+            width: 30px
+            height: 3px
+            background: #151812
+            margin-top: 6px
+        .hamburger__long
+            display: block
+            width: 36px
+            height: 3.5px
+            background: #151812       

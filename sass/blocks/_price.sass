@@ -1,0 +1,61 @@
+.price
+    padding-top: 60px
+    &__title
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+        @include circle
+        position: relative
+        text-align: center
+        &:before
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%) translateY(-4px)
+    &__divider
+        width: 60px
+        height: 3px
+        background-color: $main-color
+        margin: 0 auto 
+        margin-top: 25px
+    &__wrapper
+        margin-top: 60px
+        padding: 0 50px
+        display: grid
+        grid-template-columns: repeat(2,minmax(365px, auto))
+        grid-template-rows: repeat(3, auto)
+        gap: 15px
+        justify-content: space-between
+        align-content: center
+    &__item
+        display: grid
+        gap: 5px
+        position: relative
+        &-head
+            display: flex
+            justify-content: space-between
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 21px
+            color: #000000
+        &-body
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
+        &-circle
+            position: absolute
+            width: 15px
+            height: 15px
+            background: $main-color
+            border-radius: 100%
+            left: -30px
+            top: 4px
+    
